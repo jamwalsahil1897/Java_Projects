@@ -1,0 +1,28 @@
+<h2 class="bg-light mb-2 text-center">Add New Customer</h2>
+
+    
+<form (submit)="addNewCustomer(addCutomerForm)" #addCutomerForm="ngForm" style="border: 5px solid #1b0679; padding: 10px;" >
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer02">First Name</label>
+        <input type="text" class="form-control"   placeholder="Enter firstName" required name="firstName" id="firstName" ngModel>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationServer03">Last Name</label>
+        <textarea type="text" class="form-control" placeholder="Enter lastName" required name="lastName" id="lastName" ngModel >
+        </textarea>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">Mobile Nunmer</label>
+        <input type="text" class="form-control" placeholder="Enter customerPnone" name="customerPnone" id="customerPnone" ngModel>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">User id</label>
+        <input type="text" class="form-control"required placeholder="Enter user id" name="userid" id="userid" ngModel>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
